@@ -63,14 +63,17 @@
         font-style:italic;
         font-size:18px;
         border:none;
-        height:10px;
-        width:50px;
+        height:25px;
+        width:180px;
+        margin-left: 8px;
+        margin-top: 2px;
+        border-color: transparent;
         }
 
         img {
             width: 20px;
             height: 15px;
-            margin-left: -45px;
+            margin-left: -180px;
             margin-top: 8px;
         }
 
@@ -104,7 +107,7 @@
             
         }
         .r{
-            border-radius: 20px;
+            border-radius: 8px;
         }
 
         h3{
@@ -149,6 +152,7 @@
             font: normal 15pt Arial;
             text-align: center;
             margin-top: 5px;
+            border-radius: 8px;
         }
 
         option {
@@ -156,6 +160,15 @@
             color:black;
         }
 
+        .cop {
+            margin-right: 85px;
+        }
+        .edit {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            margin-bottom: -7px;
+        }
 
 
 
@@ -197,73 +210,55 @@
 <br>
 
 <div id='cat'>
-
+<div class='cop'>
+    <img src="images/edit.png" class='edit'>
+    <img src="images/lixeira2.png" class='edit'>
     <select name="categ" id="categ" >
         <option> Categorias </option>
     </select> <br>
-    <select name="categ" id="categ" >
-        <option> Matematica </option>
-        <option> Calculo</option>
-        <option> Algebra </option>
-        <option> Sistema Linear</option>
+</div>
+<div class='cop'>
+    <img src="images/edit.png" class='edit'>
+    <img src="images/lixeira2.png" class='edit'>
+    <select name="categ" id="categ" onchange="location = this.value;" >
+        <option value='pacotepag1.html'> Matematica </option>
+        <option value='resolvendo.html'>Calculo</option> 
+        <option value='resolvendo.html'> Algebra </option>
+        <option value='resolvendo.html'> Sistema Linear</option>
     </select> <br>
+</div>
+<div class='cop'>
+    <img src="images/edit.png" class='edit'>
+    <img src="images/lixeira2.png" class='edit'>
     <select name="categ" id="categ" >
         <option> Portugues </option>
     </select> <br>
+</div>
+<div class='cop'>
+    <img src="images/edit.png" class='edit'>
+    <img src="images/lixeira2.png" class='edit'>
     <select name="categ" id="categ" >
         <option> Historia </option>
     </select> <br>
+</div>
+<div class='cop'>
+    <img src="images/edit.png" class='edit'>
+    <img src="images/lixeira2.png" class='edit'>
     <select name="categ" id="categ" >
         <option> Categoria X </option>
     </select>
-    
 </div>
-<!--
-<table border='1' align='center'>
-    <tr>
-        <td>
-            <h3>Categorias<img src='images/m.png' class='maior' align='right'></h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3>Matematica<img src='images/m.png' class='maior' align='right'></h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3>Portugues<img src='images/m.png' class='maior' align='right'></h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3>Historia<img src='images/m.png' class='maior' align='right'></h3>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <h3>Categoria X<img src='images/m.png' class='maior' align='right'></h3>
-        </td>
-    </tr>
-</table>
--->
+</div>
 
 <table class='pro' border='0' align='center'>
-    <tr>
-        
+
+    <tr> 
         <td class='r'>
             <a href='addpacote.html'>
                 <h3>Adicionar Pacote<img src='images/mais1.png' align='left' class='mais'></h3>
             </a>
         </td>
         
-    </tr>
-    <tr>
-        <td class='r'>
-            <a href='excpacote.html'>
-                <h3>Apagar Pacote<img src='images/lixeira.png' align='left' class='mais'></h3>
-            </a>
-        </td>
     </tr>
     <tr>
         <td class='r'>
@@ -276,10 +271,6 @@
         </td>
     </tr>
 
-</table>
-    
-    
-    
-    
+</table>               
 </body>
 </html>
